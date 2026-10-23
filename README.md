@@ -6,6 +6,8 @@ A Blender extension for generating multi-camera rigs and rendering organized ima
 
 GS Capture Dome is a camera capture and export utility. It does **not** reconstruct or train Gaussian splats, generate `.ply` files, or create COLMAP projects.
 
+<img width="1920" height="1080" alt="hero" src="https://github.com/user-attachments/assets/9be52621-d4b2-4f37-a2fe-648aa50131eb" />
+
 ## Download / install
 
 1. Open [Releases](https://github.com/Chiesu/gs-capture-dome/releases/latest) and download **`gs_capture_dome-0.5.0.zip`** from the release assets. Do not use GitHub's automatically generated **Source code (zip)**.
@@ -16,6 +18,8 @@ GS Capture Dome is a camera capture and export utility. It does **not** reconstr
 For a legacy single-file script, use [`gs_capture_dome.py`](gs_capture_dome.py) inside Blender's Scripting workspace. The extension ZIP is preferred for normal installation.
 
 ## Capture approaches
+
+<img width="1920" height="1080" alt="dome-setup" src="https://github.com/user-attachments/assets/7f163177-9cdf-4733-9098-1268a1ad3138" />
 
 ### 1. Orbit Target / Sphere (default)
 
@@ -36,6 +40,8 @@ Generate different camera orientations from the **same** Reference Camera positi
 **Important:** views from a single fixed origin do not provide multi-view translation/parallax. This mode alone is generally **not sufficient for 3D Gaussian Splatting reconstruction**. Use the orbit approach when you need reconstruction baselines.
 
 ## Batch render and export
+
+<img width="1920" height="1080" alt="batch-export" src="https://github.com/user-attachments/assets/6b4edf03-b98b-499d-8fe9-b7f22e8100b3" />
 
 - Renders views sequentially using the current Blender render engine.
 - Outputs PNG, JPEG or OpenEXR using a custom percentage or height preset, up to 2x the scene's base dimensions.
